@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="">Navbar</a>
+    <a class="navbar-brand" href=""><img src="../../assets/emojis/logo/logo2.png" style ="width: auto; height: 50px;"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -14,16 +14,19 @@
         <li class="nav-item">
           <a  routerLink = "/prayer" class="nav-link" href="#">Prayer Time</a>
         </li>
+        <li class="nav-item">
+          <a  routerLink = "/hejri" class="nav-link" href="#">Hejri Calendar</a>
+        </li>
       </ul>
     </div>
 
     <div *ngIf = "token; else elseBlock" class="d-flex justify-content-end">
-      <button  routerLink = "/profile" class="btn btn-warning">Profile</button>
-      <button (click)= "logout()" routerLink = "/" class="btn btn-info">Log out</button>
+      <button  routerLink = "/profile" class="btn profile-btn" >Profile</button>
+      <button (click)= "logout()" routerLink = "/" class="btn log">Log out</button>
     </div>
     <ng-template #elseBlock>
       <div class="d-flex justify-content-end">
-        <button  routerLink = "/login" class="btn btn-info">Log in</button>
+        <button  routerLink = "/login" class="btn log">Log in</button>
       </div>
     </ng-template>
 

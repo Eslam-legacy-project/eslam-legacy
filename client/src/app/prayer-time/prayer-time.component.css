@@ -5,7 +5,7 @@
     margin: 0.5%;
     padding: 15px;
     font-size: 25px;
-    background-image: url("https://i.ibb.co/f4xtgc1/prayer2.jpg");
+    background-image: url("../../assets/emojis/about/prayer.jpg");
     background-size: cover;
     box-shadow: 1px 1px 3px rgb(139, 99, 61);
     border-radius: 10px;
@@ -14,15 +14,16 @@
 
 p {
     margin-top: -20%;
-    color: #4d005c;
-    font-weight: bold;
-
+    color:rgb(3, 187, 147) ;
+    font-weight: 300;
+    text-align: center;
 }
 
 h4 {
     margin-top: 40%;
     text-align: center;
-    color: #4d005c;
+    font-weight: 500;
+    color: rgb(2, 68, 54);
 }
 
 #prayerDivContainer {

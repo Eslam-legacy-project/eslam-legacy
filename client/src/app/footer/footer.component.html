@@ -1,16 +1,49 @@
-<footer class="container-fluid text-center">
-  <div class="fixed-action-btn smooth-scroll" style="bottom: 45px; right: 24px;">
-    <a href="#top-section" class="btn-floating btn-large red">
-    <i class="fas fa-arrow-up"></i>
-    </a>
+
+  <footer class="bg-white">
+    <div class="container py-5">
+      <div class="row py-4">
+        <div class="col-lg-4 col-md-6 mb-4 mb-lg-0"><img src="img/logo.png" alt="" width="180" class="mb-3">
+          <p class="font-italic text-muted">Please join us and share!</p>
+          <ul class="list-inline mt-4">
+            <li class="list-inline-item"><a href="#" target="_blank" title="twitter"><i class="fab fa-twitter"></i></a></li>
+            <li class="list-inline-item"><a href="#" target="_blank" title="facebook"><i class="fab fa-facebook"></i></a></li>
+            <li class="list-inline-item"><a href="#" target="_blank" title="instagram"><i class="fab fa-instagram"></i></a></li>
+            <li class="list-inline-item"><a href="#" target="_blank" title="pinterest"><i class="fab fa-pinterest"></i></a></li>
+            <li class="list-inline-item"><a href="#" target="_blank" title="vimeo"><i class="fab fa-vimeo"></i></a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+          <h6 class="text-uppercase font-weight-bold mb-4">website</h6>
+          <ul class="list-unstyled mb-0">
+            <li class="mb-2"><a routerLink = "/" class="text-muted">Home</a></li>
+            <li class="mb-2"><a routerLink = "/radio" class="text-muted">Radio</a></li>
+            <li class="mb-2"><a routerLink = "/prayer" class="text-muted">Prayer Time</a></li>
+            <li class="mb-2"><a href="#" class="text-muted">Hejri calendar</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-md-6 mb-4 mb-lg-0">
+          <h6 class="text-uppercase font-weight-bold mb-4">Company</h6>
+          <ul class="list-unstyled mb-0">
+            <li class="mb-2"><a  routerLink = "/login" class="text-muted">Login</a></li>
+            <li class="mb-2"><a routerLink = "/register" class="text-muted">Register</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4 col-md-6 mb-lg-0">
+          <h6 class="text-uppercase font-weight-bold mb-4">Donation</h6>
+          <p class="text-muted mb-4">Your Donation can help us give you more</p>
+          <div class="p-1 rounded border">
+            <div class="input-group">
+              <input type="text" placeholder="Please add the amount" aria-describedby="button-addon1" class="form-control border-0 shadow-0" [(ngModel)]="amount">
+              <div class="input-group-append">
+                <button id="donate" type="submit" class="btn " (click)='proceedPayment()'>Donate</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  <p>Eslamo Copyright</p>
-  <h2>Donation</h2>
-  <input [(ngModel)]="amount" type="text"/><br><br>
-  <button type="submit" (click)='proceedPayment()'>Donate</button>    
-  <form class="form-inline">Get Newsletter:
-    <input type="email" class="form-control" id="footersub" size="50" placeholder="Email Address">
-    <button type="button" class="btn btn-danger subtn">Subscribe</button>
-  </form>
-  
-</footer>
+
+    <div class="bg-light py-4">
+      <div class="container text-center">
+        <p class="text-muted mb-0 py-2">© 2020 Eslamo All rights reserved.</p>
+      </div>

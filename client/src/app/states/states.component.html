@@ -1,44 +1,31 @@
-<div class="container">
-    <h2>Select your emotional state</h2>
-<div class = "row" >
-    <div class="col">
-      <div class="card" style="width:400px">
-         <img class="card-img-top" src="../../assets/emojis/{{gender}}/angry.png" alt="Card image" style="width:100%">
-         <div class="card-body">
-          <button  class="btn btn-primary" (click)="getState('angry')">Angry</button>
-         </div>
-      </div>
-    </div>
-    <div class="col">
-        <div class="card" style="width:400px">
-           <img class="card-img-top" src="../../assets/emojis/{{gender}}/scared.png" alt="Card image" style="width:100%">
-           <div class="card-body">
-            <button (click)="getState('scared')" class="btn btn-primary">Scared</button>
-           </div>
+<div class="container text-center">
+    <h3 class="font-weight-bold">Select your emotional state</h3>
+<div class = "row text-center" >
+  
+     <div class="col-xl-3 col-sm-6 mb-5">
+        <div class="bg-white rounded shadow-sm py-5 px-4"><img src="../../assets/emojis/{{gender}}/angry.png" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+          <a  style="color: aliceblue; font-weight: bold;" (click)="getState('angry')" class="btn profile-btn px-5 rounded-pill shadow-sm">Angry</a>
         </div>
       </div>
-</div>
-<div class = "row" >
-    <div class="col">
-      <div class="card" style="width:400px">
-         <img class="card-img-top" src="../../assets/emojis/{{gender}}/sick.png" alt="Card image" style="width:100%">
-         <div class="card-body">
-          <button (click)="getState('sick')" class="btn btn-primary">Sick</button>
-         </div>
+      <div class="col-xl-3 col-sm-6 mb-5">
+        <div class="bg-white rounded shadow-sm py-5 px-4"><img src="../../assets/emojis/{{gender}}/scared.png" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+          <a style="color: aliceblue;font-weight: bold;"  (click)="getState('scared')" class="btn profile-btn px-5 rounded-pill shadow-sm">Scared</a>
+        </div>
       </div>
-    </div>
-    <div class="col">
-        <div class="card" style="width:400px">
-           <img class="card-img-top" src="../../assets/emojis/{{gender}}/stuck.png" alt="Card image" style="width:100%">
-           <div class="card-body">
-            <button (click)="getState('stuck')" class="btn btn-primary">Stuck</button>
-           </div>
+      <div class="col-xl-3 col-sm-6 mb-5">
+        <div class="bg-white rounded shadow-sm py-5 px-4"><img src="../../assets/emojis/{{gender}}/sick.png" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+          <a style="color: aliceblue;font-weight: bold;"  (click)="getState('sick')" class="btn profile-btn px-5 rounded-pill shadow-sm">Sick</a>
+        </div>
+      </div>
+      <div class="col-xl-3 col-sm-6 mb-5 ">
+        <div class="bg-white rounded shadow-sm py-5 px-4"><img src="../../assets/emojis/{{gender}}/stuck.png" alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+          <a style="color: aliceblue;font-weight: bold;" (click)="getState('stuck')" class="btn profile-btn px-5 rounded-pill shadow-sm">Stuck</a>
         </div>
       </div>
 </div>
     <br>
 </div>
 
-<div>
+<div >
     <app-verses [verses] = "verses"></app-verses>
 </div>

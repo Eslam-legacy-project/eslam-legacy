@@ -1,4 +1,82 @@
 /* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { 
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+ }
+footer{
+    background-color: #F8F8F8;
+}
+
+
+
+.btn{
+    margin-left: 20px;
+    border-radius: 30px;
+}
+
+.profile-btn{
+    background:linear-gradient(125deg, rgb(201, 69, 87), rgb(247, 107, 137),  rgb(243, 159, 62), rgb(238, 210, 54));
+    color: #F8F8F8;
+}
+
+.log{
+    background:linear-gradient(125deg, rgb(3, 187, 147), rgb(101, 218, 136),   rgb(174, 211, 88), rgb(238, 210, 54));
+    color: #F8F8F8;
+}
+
+#footinput{
+    border-radius: 20px;
+    padding-left: 10px;
+    border: 1px dimgrey solid;
+}
+
+#donate{
+    background:linear-gradient(125deg, rgb(192, 12, 36), rgb(233, 71, 106),  rgb(243, 159, 62), rgb(238, 210, 54));
+    color: #F8F8F8;
+}
+#button-addon1 {
+    color: #ffc371;
+  }
+  
+  i {
+    color: rgb(3, 187, 147);
+  }
+  
+  .form-control::placeholder {
+    font-size: 0.95rem;
+    color: #aaa;
+    font-style: italic;
+  }
+  
+  .form-control.shadow-0:focus {
+    box-shadow: none;
+  }
+
+  .fa {font-family: fontawesome !important;} 
+  .image {
+    min-height: 100vh;
+  }
+
+  .bg-image {
+    background-image: url('./assets/emojis/about/01-pray.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  .bg-image1 {
+    background-image: url('./assets/emojis/about/02-pray.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  .fa-heart, .fa-trash-alt{
+      color: grey;
+  }
+  
+  .fa-heart:hover, .fa-trash-alt:hover{
+    color: rgb(192, 12, 36);
+}

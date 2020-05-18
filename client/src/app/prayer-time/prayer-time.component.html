@@ -1,31 +1,35 @@
-<ngb-datepicker #dp [(ngModel)]="model" (navigate)="date = $event.next" (click)="getPrayerTime()"></ngb-datepicker>
+<div class="container text-center">
+  <br>
+<h1>Please pick a day:</h1>
+<div class="py-4 text-center"><i class="far fa-calendar-alt fa-5x"></i></div>
+  <ngb-datepicker #dp [(ngModel)]="model" (navigate)="date = $event.next" (click)="getPrayerTime()"></ngb-datepicker>
 
-<div *ngIf = "prayers">
-        <div id="prayerDivContainer">
-            <div class="prayerDiv">
-              <h4> Fajr:</h4>
-              <p>{{prayers.timings.Fajr}}</p>
+  <div *ngIf = "prayers">
+          <div id="prayerDivContainer">
+              <div class="prayerDiv">
+                <h4> Fajr:</h4>
+                <p>{{prayers.timings.Fajr}}</p>
+              </div>
+              <div class="prayerDiv">
+                <h4>Sunrise:</h4>
+                <p>{{prayers.timings.Sunrise}}</p>
+              </div>
+              <div class="prayerDiv">
+                <h4>Dhuhr:</h4>
+                <p>{{prayers.timings.Dhuhr}}</p>
+              </div>
+              <div class="prayerDiv">
+                <h4>Asr:</h4>
+                <p>{{prayers.timings.Asr}}</p>
+              </div>
+              <div class="prayerDiv">
+                <h4>Maghrib:</h4>
+                <p>{{prayers.timings.Maghrib}}</p>
+              </div>
+              <div class="prayerDiv">
+                <h4>Isha:</h4>
+                <p>{{prayers.timings.Isha}}</p>
+              </div>
             </div>
-            <div class="prayerDiv">
-              <h4>Sunrise:</h4>
-              <p>{{prayers.timings.Sunrise}}</p>
-            </div>
-            <div class="prayerDiv">
-              <h4>Dhuhr:</h4>
-              <p>{{prayers.timings.Dhuhr}}</p>
-            </div>
-            <div class="prayerDiv">
-              <h4>Asr:</h4>
-              <p>{{prayers.timings.Asr}}</p>
-            </div>
-            <div class="prayerDiv">
-              <h4>Maghrib:</h4>
-              <p>{{prayers.timings.Maghrib}}</p>
-            </div>
-            <div class="prayerDiv">
-              <h4>Isha:</h4>
-              <p>{{prayers.timings.Isha}}</p>
-            </div>
-          </div>
+  </div>
 </div>
-

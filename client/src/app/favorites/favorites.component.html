@@ -1,11 +1,32 @@
-<div *ngFor = "let favorite of favorites">
-    <div class="row" >
-        <div class="col-md-6">
-            <img style="width: 100%;" src="http://api.mp3quran.net/ayah_image/{{favorite.surah_number}}{{favorite.verse_number}}.png">
-            <mat-basic-audio-player audioUrl= "https://verse.mp3quran.net/arabic/ibrahim_alakhdar/32/{{favorite.surah_number}}{{favorite.verse_number}}.mp3" [title]="msbapTitle" 
-            [displayTitle]="msbapDisplayTitle" [displayVolumeControls]="msbapDisplayVolumeControls" >
-            </mat-basic-audio-player>
-            <button  (click) = "deleteFavorite(favorite.verse_id)">delete</button>
+
+<div class="row">
+    <div class="col-lg-9 mx-auto">
+      <!-- Accordion -->
+      <div id="accordionExample" class="accordion shadow">
+
+        <div *ngFor = "let favorite of favorites">
+            <div class="card" >
+                <div id=verse.verse_id class="card-header bg-white shadow-sm border-0 row">
+                  <div class="col-md-10">
+                    <a (click)= "handleClick(favorite.surah_number, favorite.verse_number)" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="d-block position-relative text-dark text-uppercase collapsible-link py-2"><img style="width: 100%;" src="http://api.mp3quran.net/ayah_image/{{favorite.surah_number}}{{favorite.verse_number}}.png"></a>
+                  </div>
+                  <div class="col-md-2 text-center">   
+                    <span (click) = "deleteFavorite(favorite.verse_id)" ><i class="fas fa-trash-alt fa-3x" ></i></span>
+                  </div>
+                </div>
+
+                <div id="collapseOne" aria-labelledby="verse.verse_id" data-parent="#accordionExample" class="collapse">
+                    <div class="card-body p-5">
+                      <p>{{translationText}}</p> 
+                      <br><br>
+                      <mat-basic-audio-player audioUrl= "https://verse.mp3quran.net/arabic/ibrahim_alakhdar/32/{{favorite.surah_number}}{{favorite.verse_number}}.mp3" [title]="msbapTitle" 
+                      [displayTitle]="msbapDisplayTitle" [displayVolumeControls]="msbapDisplayVolumeControls" >
+                      </mat-basic-audio-player>
+              
+                     </div>
+                </div>
+            </div>
         </div>
+      </div>
     </div>
-</div>
+  </div>

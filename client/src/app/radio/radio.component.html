@@ -1,7 +1,21 @@
-<div *ngFor = "let radio of radios">
+
+<div class="container">
     <div class="row">
-        <mat-basic-audio-player audioUrl= {{radio.radio_url}} title={{radio.name}} 
-            [displayTitle]="radio.name" [displayVolumeControls]="msbapDisplayVolumeControls" >
-            </mat-basic-audio-player>
+        <div class="col-md-9">
+            <div *ngFor = "let radio of radios" class="">
+                <div class="row">
+                    <div class="col-md-9 text-center">
+                        <img src="../../assets/emojis/about/quran.png" style="width: auto; height: 200px;"alt="">
+                        <mat-basic-audio-player audioUrl= {{radio.radio_url}} title={{radio.name}} 
+                        [displayTitle]="radio.name" [displayVolumeControls]="msbapDisplayVolumeControls" >
+                        </mat-basic-audio-player>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <div col-md-3>
+            <img src="../../assets/emojis/about/background.png" alt="" style="width: 200px; height: auto;" class="rounded float-right">
+        </div> 
     </div>
 </div>
+

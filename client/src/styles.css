@@ -73,10 +73,10 @@ footer{
     background-position: center center;
   }
 
-  .fa-heart{
+  .fa-heart, .fa-trash-alt{
       color: grey;
   }
   
-  .fa-heart:hover{
+  .fa-heart:hover, .fa-trash-alt:hover{
     color: rgb(192, 12, 36);
 }
